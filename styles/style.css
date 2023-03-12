@@ -6,17 +6,24 @@
 
 body{
     margin: 0 auto;
-    /* width: 100%;   */
 }
 
 
 header{
     display: flex;
     height: 94px;
+    width: 100%;
     background-color: #562EFF;
     justify-content: space-between;
     align-items: center;
 }
+
+.options-img{
+    display: flex;
+    margin-right: 185px;
+}
+
+
 
 .options a{
 
@@ -38,7 +45,7 @@ header{
     margin-left: 15px;
     font-size: 24px;
     font-weight: 500;
-  color:  #FFFFFF;
+    color:  #FFFFFF;
 
 }
 .header img{
@@ -49,7 +56,6 @@ header{
 .options{
     display: flex;
     align-items: center;
-    margin-right: 185px;
 }
 
 header .options img{
@@ -142,7 +148,7 @@ hr{
 .blog{
 
     display: flex;
-    align-items: center;
+    
 }
 
 .blog-title{
@@ -266,3 +272,76 @@ a{
 }
 
 
+/* Media Queries */
+
+
+/* for mobile devices */
+
+@media only screen and (max-width: 688px){
+
+
+
+    header{
+        justify-content: space-between;
+        
+        }
+
+
+    .options-img{
+        align-items: center;
+    }    
+    .options-img, .header{
+        margin: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .options-img img{
+
+        width: 51px;
+        height: 51px;
+    }
+    
+    .courses{
+        justify-content: center;
+    }
+
+    .options{
+        flex-direction: column;
+    }
+
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses {
+
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        
+    }
+
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+}
+
+
+/* for tablet devices */
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+  
+
+
+
+        .container{
+            width: 100%;
+
+        }
+        .players, .courses{
+
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 20px;
+        }
+
+}
