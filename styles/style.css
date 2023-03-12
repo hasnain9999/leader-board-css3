@@ -205,23 +205,32 @@ a{
     padding-left: 12px;
     padding-top: 13px;
     padding-bottom: 21px;
+    margin: 0;
     box-shadow: 0px 5.3px 13.3px rgba(0, 0, 0, 0.05);
     border-radius: 13px;
     
 }
 
 .course-title{
-    font-size: 20px;
+
+    font-size: 18px;
     color: #1E1E1E;
-    
-    
+    font-weight: 500; 
 }
 
-.course .course-banner IMG{
+.course-author{
+
+    color: #ED6B4F;
+    font-size: 15px;
+}
+
+.course .course-banner img{
 
     width: 224px;
     height: 104px;
+
 }
+
 
 .course-info{
     display: flex;
